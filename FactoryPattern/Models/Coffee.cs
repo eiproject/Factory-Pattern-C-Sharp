@@ -7,6 +7,7 @@ namespace CoffeeFactory.Models {
   abstract class Coffee : ICoffee {
     protected string _coffeeName;
 
+
     // Milk, Mocha, Soy, Whip
     void ICoffee.Prepare() {
       Console.WriteLine("Preparing...");
@@ -20,7 +21,7 @@ namespace CoffeeFactory.Models {
     }
     void ICoffee.Plating() {
       Console.WriteLine("Place the mug on the plate");
-      Console.WriteLine(this._coffeeName + "Done");
+      Console.WriteLine(this._coffeeName + ". Done");
     }
 
     string ICoffee.GetName() {

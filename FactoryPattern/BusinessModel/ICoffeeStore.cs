@@ -5,7 +5,7 @@ using CoffeeFactory.Models;
 
 namespace CoffeeFactory.BusinessModel {
   interface ICoffeeStore {
-    abstract ICoffee CreateCoffee(String C);
-    ICoffee OrderCoffee(String C);
+    abstract ICoffee CreateCoffee(String CoffeeType);
+    ICoffee OrderCoffee(String CoffeeType);
   }
 }

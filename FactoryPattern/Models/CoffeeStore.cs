@@ -6,7 +6,7 @@ using CoffeeFactory.BusinessModel;
 namespace CoffeeFactory.Models {
   abstract class CoffeeStore : ICoffeeStore {
     private ICoffee _coffee;
-    public abstract ICoffee CreateCoffee(string C);
+    public abstract ICoffee CreateCoffee(string type);
 
     ICoffee ICoffeeStore.OrderCoffee(string type) {
       _coffee = CreateCoffee(type);

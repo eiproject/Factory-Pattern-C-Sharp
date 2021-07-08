@@ -7,6 +7,7 @@ namespace CoffeeFactory.Models {
   class BandungStore : CoffeeStore {
     private Coffee _coffee;
     public override ICoffee CreateCoffee(string type) {
+
       if (type.Equals("Dark Roast")) {
         _coffee = new BandungStyleDarkRoastCoffee();
       }
